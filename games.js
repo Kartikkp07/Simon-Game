@@ -47,7 +47,7 @@ function playSound(name){
 
 // ***************************************************************************************************
 // storing user response
-$(".btn").click(function(){
+$(".btn").on('click touchstart', (function(){
   var userChosenColour=$(this).attr("id");
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
