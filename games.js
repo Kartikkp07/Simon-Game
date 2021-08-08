@@ -16,7 +16,8 @@ $(document).keypress(function(){
 
   }
 });
-// generating randomnumbers,animating btns,playing sounds
+// generating randomnumbers,animating btns,playing 
+
 function nextSequence(){
   level++;
   $("#level-title").text("Level " + level);
@@ -37,7 +38,7 @@ function nextSequence(){
 // ***************************************************************************************************
 // playing button sounds
 function playSound(name){
-  var audio = new Audio("sounds/"+name+".mp3");
+  var audio = new Audio(name+".mp3");
      audio.play();
 
 }
